@@ -4,9 +4,12 @@ json_
 Converts camelCase JavaScript objects to JSON snake_case and vise versa. This is a direct replacement for the built-in JSON object. In fact, this simply wraps the built-in JSON object.
 
 ### First, get the package
+json_ has zero dependencies and comes with AMD and CommonJS module boilerplate. If the last sentence meant nothing to you then simply drop the following into your page:
+
+    <script src="https://raw.github.com/NobleJS/json_/master/lib/json_.js"></script>
 
 ```
-$ git clone git@github.com:NobleJS/json_.git
+npm install json_ --save
 ```
 
 ### Example
