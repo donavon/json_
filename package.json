@@ -1,0 +1,36 @@
+{
+    "name": "json_",
+    "description": "Converts camelCase JavaScript objects to JSON snake_case and vise versa.",
+    "version": "0.0.1",
+    "homepage": "https://github.com/NobleJS/json_",
+    "author": {
+        "name": "NobleJS"
+    },
+    "keywords": [
+        "JSON",
+        "snakecase",
+        "camelcase"
+    ],
+    "contributors": [
+    {
+        "name": "Donavon West",
+        "email": "email@donavon.com",
+        "url": "http://donavon.com"
+    }
+    ],
+    "dependencies": {
+    },
+    "license": {
+        "type": "MIT",
+        "url": "http://github.com/NobleJS/json_/raw/master/LICENSE"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/NobleJS/json_.git"
+    },
+    "bugs": {
+        "url": "http://github.com/NobleJS/json_/issues"
+    },
+    "main": "lib/json_.js",
+    "readmeFilename": "README.md"
+}
