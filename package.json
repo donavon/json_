@@ -1,7 +1,7 @@
 {
     "name": "json_",
     "description": "Converts camelCase JavaScript objects to JSON snake_case and vise versa.",
-    "version": "0.0.3",
+    "version": "1.0.0",
     "homepage": "https://github.com/NobleJS/json_",
     "author": {
         "name": "NobleJS"
