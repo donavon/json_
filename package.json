@@ -31,6 +31,9 @@
     "bugs": {
         "url": "http://github.com/NobleJS/json_/issues"
     },
+    "scripts": {
+        "test": "mocha"
+        },
     "main": "lib/json_.js",
     "readmeFilename": "README.md"
 }
