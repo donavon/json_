@@ -1,39 +1,43 @@
 {
-    "name": "json_",
-    "description": "Converts camelCase JavaScript objects to JSON snake_case and vise versa.",
-    "version": "1.0.0",
-    "homepage": "https://github.com/YuzuJS/json_",
-    "author": {
-        "name": "YuzuJS"
-    },
-    "keywords": [
-        "JSON",
-        "snakecase",
-        "camelcase"
-    ],
-    "contributors": [
+  "name": "json_",
+  "description": "Converts camelCase JavaScript objects to JSON snake_case and vise versa.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/YuzuJS/json_",
+  "author": {
+    "name": "YuzuJS"
+  },
+  "keywords": [
+    "JSON",
+    "snakecase",
+    "camelcase"
+  ],
+  "contributors": [
     {
-        "name": "Donavon West",
-        "email": "email@donavon.com",
-        "url": "http://donavon.com"
+      "name": "Donavon West",
+      "email": "email@donavon.com",
+      "url": "http://donavon.com"
     }
-    ],
-    "dependencies": {
-    },
-    "license": {
-        "type": "MIT",
-        "url": "http://github.com/YuzuJS/json_/raw/master/LICENSE"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/YuzuJS/json_.git"
-    },
-    "bugs": {
-        "url": "http://github.com/YuzuJS/json_/issues"
-    },
-    "scripts": {
-        "test": "mocha"
-        },
-    "main": "lib/json_.js",
-    "readmeFilename": "README.md"
+  ],
+  "dependencies": {},
+  "license": {
+    "type": "MIT",
+    "url": "http://github.com/YuzuJS/json_/raw/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/YuzuJS/json_.git"
+  },
+  "bugs": {
+    "url": "http://github.com/YuzuJS/json_/issues"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "lib/json_.js",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "chai": "~1.9.2",
+    "sinon": "~1.11.1",
+    "mocha": "~2.0.1"
+  }
 }
