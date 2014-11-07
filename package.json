@@ -2,9 +2,9 @@
     "name": "json_",
     "description": "Converts camelCase JavaScript objects to JSON snake_case and vise versa.",
     "version": "1.0.0",
-    "homepage": "https://github.com/NobleJS/json_",
+    "homepage": "https://github.com/YuzuJS/json_",
     "author": {
-        "name": "NobleJS"
+        "name": "YuzuJS"
     },
     "keywords": [
         "JSON",
@@ -22,14 +22,14 @@
     },
     "license": {
         "type": "MIT",
-        "url": "http://github.com/NobleJS/json_/raw/master/LICENSE"
+        "url": "http://github.com/YuzuJS/json_/raw/master/LICENSE"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/NobleJS/json_.git"
+        "url": "git://github.com/YuzuJS/json_.git"
     },
     "bugs": {
-        "url": "http://github.com/NobleJS/json_/issues"
+        "url": "http://github.com/YuzuJS/json_/issues"
     },
     "scripts": {
         "test": "mocha"

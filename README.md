@@ -1,6 +1,8 @@
 json_
 =====
 
+[![Build Status](https://travis-ci.org/YuzuJS/json_.png)](https://travis-ci.org/YuzuJS/json_)
+
 Converts camelCase JavaScript objects to JSON snake_case and vise versa. This is a direct replacement for the built-in JSON object. In fact, this simply wraps the built-in JSON object. Very handy when your back_end APIs are not build using Node.js.
 
 ### First, get the package
