@@ -6,6 +6,7 @@ lib-cov
 *.out
 *.pid
 *.gz
+*.tgz
 
 pids
 logs
@@ -13,3 +14,5 @@ results
 
 npm-debug.log
 node_modules
+.travis.yml
+test

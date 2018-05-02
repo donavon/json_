@@ -1,8 +1,14 @@
 var assert = require("assert");
 var JSON_ = require("../.");
 
+var responseStub = {
+    text: function() {
+        return Promise.resolve('{ "foo_bar": 1 }');
+    }
+};
+
 describe('JSON_', function(){
-    describe('parse', function(){
+    describe('parse (passing a string)', function (){
         it('should return camelCase property names given snake_case JSON', function (){
             var data;
             data = JSON_.parse('{"first_name": ""}');
@@ -15,7 +21,18 @@ describe('JSON_', function(){
             assert.equal(Object.keys(data)[0], "scoresA1");
         });
     });
-    describe('stringify', function(){
+    describe('parse (passing a Response)', function (){
+        it('should return a promise', function (){
+            assert.equal(JSON_.parse(responseStub)  instanceof Promise, true);
+        });
+        it('that resolves with a camelCased JS object', function (done){
+            JSON_.parse(responseStub).then(function (obj) {
+                assert.equal(JSON.stringify(obj), JSON.stringify({ fooBar: 1 }));
+                done();
+            });
+        });
+    });
+    describe('stringify', function (){
         it('should return snake_case JSON given an object with camelCase property names', function (){
             var data;
             data = JSON_.stringify({firstName: ""});
