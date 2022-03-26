@@ -1,17 +1,15 @@
 {
-  "name": "json_",
-  "description": "Converts camelCase JavaScript objects to JSON snake_case and vise versa.",
-  "version": "2.0.0",
-  "homepage": "https://github.com/donavon/json_",
-  "author": "Donavon West <email@donavon.com> (http://donavon.com)",
-  "keywords": [
-    "JSON",
-    "snakecase",
-    "camelcase",
-    "fetch"
-  ],
-  "dependencies": {},
+  "version": "3.0.0",
   "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/donavon/json_.git"
@@ -20,13 +18,65 @@
     "url": "http://github.com/donavon/json_/issues"
   },
   "scripts": {
-    "test": "mocha"
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "coverage": "tsdx test --coverage",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
   },
-  "main": "lib/json_.js",
-  "readmeFilename": "README.md",
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "json_",
+  "description": "Converts camelCase JavaScript objects to JSON snake_case and vise versa.",
+  "author": "Donavon West <github@donavon.com> (https://donavon.com/)",
+  "keywords": [
+    "JSON",
+    "snakecase",
+    "camelcase",
+    "fetch",
+    "parse",
+    "stringify"
+  ],
+  "module": "dist/json_.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/json_.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/json_.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "devDependencies": {
-    "chai": "~1.9.2",
-    "mocha": "~2.0.1",
-    "sinon": "~1.11.1"
+    "@remix-run/node": "^1.3.3",
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "husky": "^7.0.4",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
   }
 }

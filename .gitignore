@@ -1,9 +1,6 @@
-# IDE junk
-.settings
-.project
-
-# NodeJS
+*.log
+.DS_Store
 node_modules
-
-npm-debug.log
-*.tgz
+.cache
+dist
+coverage
